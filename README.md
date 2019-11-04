@@ -1,3 +1,3 @@
-# 000
+# Questions About Space
 
-A photo blog web app featuring the work of Roy Handy, built on VueJs.
+questionsabout.space is a web presence for general questions and answers about space 🚀✨.
