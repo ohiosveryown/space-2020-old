@@ -36,6 +36,18 @@
                 
               }
             },
+{
+              path: "/random.html",
+              meta: {
+                __relative: 'random.vue',
+                __pageId: '12f675ca'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--random-vue" */ "/Users/pence/Desktop/projects/space/space-2020/pages/random.vue?saberPage=12f675ca")
+                
+              }
+            },
       
       // An addtional route to catch all other requests, i.e. 404 page
       {

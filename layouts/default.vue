@@ -1,16 +1,16 @@
 <!-- layout -->
 <template>
-  <div class="debug slot-wrapper">
+  <div class="slot-wrapper">
     <slot/>
-    <div class="recent-posts" v-if="page.posts">
-
-    </div>
-
     <ul>
       <li v-for="post in page.posts" :key="post.permalink">
         <saber-link :to='post.permalink'>{{ post.title }}</saber-link>
       </li>
     </ul>
+
+    <saber-link to='/random.html'>
+      <button>Go to Random</button>
+    </saber-link>
   </div>
 </template>
 
@@ -22,7 +22,11 @@
   @import '../style/util.scss';
   @import '../style/type.scss';
   ul { display: flex; flex-direction: column; }
-  // .page-enter-active, .page-leave-active { transition: all calc(var(--animbase) * 2) ease; }
+
+  button {
+    margin-top: 2rem;
+    padding: 1.2rem 2rem;
+  }
 </style>
 
 
@@ -37,6 +41,11 @@
           `${pageTitle} - ${this.$siteConfig.title}` :
           this.$siteConfig.title
       }
+    },
+
+    mounted() {
+      // let comingFrom = document.referrer
+      // console.log(comingFrom)
     },
   }
 </script>
