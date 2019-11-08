@@ -34,8 +34,8 @@
       ]
 
       let post = posts[Math.floor(Math.random()*posts.length)]
-      // console.log(this.$route.path)
-      // console.log('from posts ' + post)
+      console.log(this.$route.path)
+      console.log('from posts ' + post)
       console.log(post)
       if ( post === this.$route.path ) {
         console.log('they the same')
