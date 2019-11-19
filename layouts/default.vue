@@ -45,7 +45,7 @@
 
     mounted() {
       // let comingFrom = document.referrer
-      console.log(comingFrom)
+      // console.log(comingFrom)
     },
   }
 </script>
